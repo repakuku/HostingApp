@@ -9,9 +9,13 @@ import SwiftUI
 
 struct SwiftUIView: View {
     var body: some View {
-        Image(systemName: "poweroutlet.type.k")
-            .resizable()
+        ZStack {
+            Color(uiColor: .systemTeal)
+                .ignoresSafeArea()
+            Image(systemName: "poweroutlet.type.k")
+                .resizable()
             .frame(width: 300, height: 300)
+        }
     }
 }
 
