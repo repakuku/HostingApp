@@ -12,15 +12,15 @@ class ViewController: UIViewController {
     private var button: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Show", for: .normal)
-        button.setTitleColor(.white, for: .normal)
+        button.setTitle("Show SwiftUI Screen", for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.addTarget(nil, action: #selector(showSwiftUIScreen), for: .allTouchEvents)
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = .white
         view.addSubview(button)
         setupConstraints()
     }
